@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "./../variants";
 
 // constants
-import { bio, name } from "../constants/about";
+import { bio, firstName, lastName, name } from "../constants/about";
 
 const Home = () => {
   return (
@@ -34,7 +34,10 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Hello, I{"'"}m <br /> <span className="text-accent">{name}</span>
+            Hello, I{"'"}m <br />{" "}
+            <span className="text-accent">{firstName}</span>
+            <br />
+            <span className="text-accent">{lastName}</span>
           </motion.h1>
           {/* sub title */}
           <motion.p
@@ -47,11 +50,11 @@ const Home = () => {
             {bio}
           </motion.p>
           {/* btn */}
-          <div className="relative flex items-center justify-center xl:hidden">
+          <div className="relative z-50 flex items-center justify-center xl:hidden">
             <ProjectsBtn />
           </div>
           <motion.div
-            className="hidden xl:flex"
+            className="z-50 hidden xl:flex"
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
@@ -62,7 +65,23 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div></div>
+      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+        {/* bg-img */}
+        <div className="absolute w-full h-full bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat mix-blend-color-dodge translate-z-0"></div>
+        {/* Particles */}
+        <ParticlesContainer />
+        {/* avatar Img */}
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 max-lg:hidden lg:-top-32 lg:right-[8%]"
+        >
+          <Avatar />
+        </motion.div>
+      </div>
     </div>
   );
 };
