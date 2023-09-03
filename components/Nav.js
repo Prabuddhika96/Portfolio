@@ -10,18 +10,18 @@ import {
 
 // nav data
 export const navData = [
-  { name: "home", path: "/", icon: <HiHome /> },
-  { name: "about", path: "/about", icon: <HiUser /> },
-  { name: "services", path: "/services", icon: <HiRectangleGroup /> },
-  { name: "work", path: "/work", icon: <HiViewColumns /> },
+  { name: "home", path: RoutNames.Home, icon: <HiHome /> },
+  { name: "about", path: RoutNames.About, icon: <HiUser /> },
+  { name: "services", path: RoutNames.Services, icon: <HiRectangleGroup /> },
+  { name: "work", path: RoutNames.Work, icon: <HiViewColumns /> },
   {
     name: "testimonials",
-    path: "/testimonials",
+    path: RoutNames.Testimonials,
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
     name: "contact",
-    path: "/contact",
+    path: RoutNames.Contact,
     icon: <HiEnvelope />,
   },
 ];
@@ -31,6 +31,7 @@ import Link from "next/link";
 
 // next router
 import { useRouter } from "next/router";
+import { RoutNames } from "../constants/RouteNames";
 
 const Nav = () => {
   const router = useRouter();

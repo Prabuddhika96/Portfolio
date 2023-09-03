@@ -19,7 +19,9 @@ const Layout = ({ children }) => {
       className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}
     >
       <TopLeftImg />
-      <Nav />
+      <div className="max-xl:tb-[90px]">
+        <Nav />
+      </div>
       <Header />
       {children}
     </div>
