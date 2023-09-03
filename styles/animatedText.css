@@ -1,0 +1,206 @@
+/* body {
+    background: #182028;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 9vmin;
+    color: #8bf;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+} */
+
+/* Typewriter effect 1 */
+@keyframes typing {
+
+    0.0000%,
+    100% {
+        content: "";
+    }
+
+    2%,
+    98% {
+        content: "P";
+    }
+
+    4%,
+    96% {
+        content: "Pr";
+    }
+
+    6%,
+    94% {
+        content: "Pra";
+    }
+
+    8%,
+    92% {
+        content: "Prab";
+    }
+
+    10%,
+    90% {
+        content: "Prabu";
+    }
+
+    12%,
+    88% {
+        content: "Prabud";
+    }
+
+    14%,
+    86% {
+        content: "Prabudd";
+    }
+
+    16%,
+    84% {
+        content: "Prabuddh";
+    }
+
+    18%,
+    82% {
+        content: "Prabuddhi";
+    }
+
+    20%,
+    80% {
+        content: "Prabuddhik";
+    }
+
+    22%,
+    78% {
+        content: "Prabuddhika";
+    }
+
+    24%,
+    76% {
+        content: "Prabuddhika ";
+    }
+
+    26%,
+    74% {
+        content: "Prabuddhika M";
+    }
+
+    28%,
+    72% {
+        content: "Prabuddhika Ma";
+    }
+    30%,
+    70% {
+        content: "Prabuddhika May";
+    }
+    32%,
+    68% {
+        content: "Prabuddhika Mayu";
+    }
+    34%,
+    66% {
+        content: "Prabuddhika Mayur";
+    }
+    36%,
+    64% {
+        content: "Prabuddhika Mayura";
+    }
+    38%,
+    62% {
+    content: "Prabuddhika Mayurap";
+    }
+    40%,
+    60% {
+    content: "Prabuddhika Mayurapa";
+    }
+    42%,
+    58% {
+    content: "Prabuddhika Mayurapak";
+    }
+    44%,
+    56% {
+    content: "Prabuddhika Mayurapaks";
+    }
+
+    46%,
+    54% {
+        content: "Prabuddhika Mayurapaksh";
+    }
+    48%,
+    52% {
+        content: "Prabuddhika Mayurapaksha";
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter {
+    --caret: currentcolor;
+}
+
+.typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+    border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+        animation: none;
+    }
+
+    @keyframes sequencePopup {
+
+        0%,
+        100% {
+            content: "developer";
+        }
+
+        25% {
+            content: "writer";
+        }
+
+        50% {
+            content: "reader";
+        }
+
+        75% {
+            content: "human";
+        }
+    }
+
+    .typewriter::before {
+        content: "developer";
+        animation: sequencePopup 12s linear infinite;
+    }
+}
+
+/**/

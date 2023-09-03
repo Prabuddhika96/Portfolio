@@ -10,17 +10,17 @@ import {
 
 // nav data
 export const navData = [
-  { name: "home", path: RouteNames.Home, icon: <HiHome /> },
-  { name: "about", path: RouteNames.About, icon: <HiUser /> },
-  { name: "services", path: RouteNames.Services, icon: <HiRectangleGroup /> },
-  { name: "work", path: RouteNames.Work, icon: <HiViewColumns /> },
+  { name: "Home", path: RouteNames.Home, icon: <HiHome /> },
+  { name: "About", path: RouteNames.About, icon: <HiUser /> },
+  { name: "Services", path: RouteNames.Services, icon: <HiRectangleGroup /> },
+  { name: "Projects", path: RouteNames.Work, icon: <HiViewColumns /> },
   {
-    name: "testimonials",
+    name: "Testimonials",
     path: RouteNames.Testimonials,
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
-    name: "contact",
+    name: "Contact",
     path: RouteNames.Contact,
     icon: <HiEnvelope />,
   },
@@ -41,15 +41,15 @@ const Nav = () => {
     <nav
       className={`flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen`}
     >
-      <div className="flex items-center justify-between w-full px-4 py-8 text-3xl xl:flex-col xl:justify-center gap-y-10 md:px-40 xl:px-0 h-[80px] xl:h-max bg-white/10 backdrop-blur-sm xl:text-xl xl:rounded-full">
+      <div className="flex items-center justify-between w-full px-4 py-8 text-3xl xl:flex-col xl:justify-center gap-y-10 md:px-40 xl:px-0 h-[80px] xl:h-max bg-[#9B83FF]/10 backdrop-blur-sm xl:text-xl xl:rounded-full">
         {navData?.map((link, index) => {
           return (
             <Link
               href={link.path}
               key={index}
               className={`${
-                link.path === pathName && `text-accent`
-              } relative flex items-center group hover:text-red-500 transition-all duration-300`}
+                link.path === pathName && `text-[#5F58F9]`
+              } relative flex items-center group hover:text-[#9B83FF] transition-all duration-300`}
             >
               {/* tooltip */}
               <div

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/animatedText.css";
 
 // components
 import Layout from "../components/Layout";
@@ -9,6 +10,7 @@ import { useRouter } from "next/router";
 
 // framer motion
 import { AnimatePresence, motion } from "framer-motion";
+import AnimatedText from "./../components/AnimatedText";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();

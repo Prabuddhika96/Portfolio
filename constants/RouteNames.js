@@ -1,6 +1,6 @@
 export const RouteNames = {
   Home: "/",
-  Work: "/work",
+  Work: "/projects",
   About: "/about",
   Services: "/services",
   Contact: "/contact",

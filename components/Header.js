@@ -15,7 +15,8 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between py-8 lg:flex-row gap-y-6">
           {/* logo */}
-          <Link href={RouteNames.Home}>
+          <div></div>
+          {/* <Link href={RouteNames.Home}>
             <Image
               src={"/logo.svg"}
               width={220}
@@ -24,7 +25,7 @@ const Header = () => {
               priority={true}
               // className="w-full h-full animate-spin-slow max-w-[141px] max-h-[148px]"
             />
-          </Link>
+          </Link> */}
           {/* socials */}
           <Socials />
         </div>

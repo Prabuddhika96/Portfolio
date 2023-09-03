@@ -12,7 +12,7 @@ const Socials = () => {
           <Link
             href={link.path}
             key={index}
-            className="transition-all duration-300 hover:text-accent"
+            className="transition-all duration-300 hover:text-[#5F58F9]"
           >
             {/* icon */}
             <div>{link.icon}</div>

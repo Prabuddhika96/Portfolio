@@ -14,6 +14,7 @@ import { fadeIn } from "./../variants";
 
 // constants
 import { bio, firstName, lastName, name } from "../constants/about";
+import AnimatedText from "../components/AnimatedText";
 
 const Home = () => {
   return (
@@ -28,16 +29,17 @@ const Home = () => {
         >
           {/* title */}
           <motion.h1
-            className="h1"
+            className="uppercase h1"
             variants={fadeIn("down", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
           >
-            Hello, I{"'"}m <br />{" "}
-            <span className="text-accent">{firstName}</span>
+            {/* Hello, I{"'"}m <br />{" "}
+            <span className="text-[#9B83FF]">{firstName}</span>
             <br />
-            <span className="text-accent">{lastName}</span>
+            <span className="text-[#9B83FF]">{lastName}</span> */}
+            <AnimatedText firstName={firstName} lastName={lastName} />
           </motion.h1>
           {/* sub title */}
           <motion.p
@@ -65,7 +67,7 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="w-[1200px] overflow-y-hidden h-full absolute right-0 bottom-0">
         {/* bg-img */}
         <div className="absolute w-full h-full bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat mix-blend-color-dodge translate-z-0"></div>
         {/* Particles */}
